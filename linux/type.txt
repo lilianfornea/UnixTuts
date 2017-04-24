@@ -1,0 +1,41 @@
+TYPE
+====
+(C) Lilian Fornea, AAL
+
+@lilianfornea : Twitter
+
+
+
+* Intro
+* Next Level
+* Last thoughts
+* Beyond Discussion
+
+
+Intro
+-----
+Because my english is very bad, easiest way will be if you copy row by row in your shell and examine output
+
+
+Next Level
+----------
+
+$ cd ~
+$ echo -e "alias ls='ls --color=auto'\nalias LA='TZ=/usr/share/zoneinfo/America/Los_Angeles date -R'" >> .bashrc
+$ echo 'restart computer'
+$ su
+# /sbin/init 6
+$ LA
+$ type ls
+$ type -a ls
+$ type cd && type -a pwd
+
+
+Last thoughts
+-------------
+Be shure that I will update tutorial in the future. So, stay on tune. And, in case it was usefull, share please with your fellows.
+
+
+Beyond Discussion
+-----------------
+Don't be so shy! Give leafs to author. He love salad ;)

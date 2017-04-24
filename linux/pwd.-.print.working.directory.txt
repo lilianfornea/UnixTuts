@@ -1,0 +1,42 @@
+PWD - Print Working Directory
+=============================
+(C) Lilian Fornea, AAL
+
+@lilianfornea : Twitter
+
+
+
+* Intro
+* Next Level
+* Last thoughts
+* Beyond Discussion
+
+
+Intro
+-----
+Because my english is very bad, easiest way will be if you copy row by row in your shell and examine output
+
+
+Next Level
+----------
+
+$ cd /tmp
+$ mkdir origdir
+$ touch origdir/orig.file.in.origdir.txt
+$ echo "some text in orig.file.from.origdir" > origdir/orig.file.in.origdir.txt
+$ cat origdir/orig.file.in.origdir.txt
+$ ln -s /tmp/origdir /tmp/symdir
+$ ls -lh /tmp/symdir
+$ cd symdir
+$ pwd -L
+$ pwd -P
+
+
+Last thoughts
+-------------
+Be shure that I will update tutorial in the future. So, stay on tune. And, in case it was usefull, share please with your fellows.
+
+
+Beyond Discussion
+-----------------
+Don't be so shy! Give leafs to author. He love salad ;)

@@ -1,0 +1,41 @@
+CD - Change Directory
+=====================
+(C) Lilian Fornea, AAL
+
+@lilianfornea : Twitter
+
+
+
+* Intro
+* Next Level
+* Last thoughts
+* Beyond Discussion
+
+
+Intro
+-----
+Because my english is very bad, easiest way will be if you copy row by row in your shell and examine output
+
+
+Next Level
+----------
+
+$ cd /tmp
+$ pwd
+$ mkdir folder
+$ cd folder
+$ cd ..
+$ pwd
+$ cd folder
+$ cd -
+$ cd ~ 
+
+
+Last thoughts
+-------------
+Be shure that I will update tutorial in the future. So, stay on tune. And, in case it was usefull, share please with your fellows.
+
+
+Beyond Discussion
+-----------------
+Don't be so shy! Give leafs to author. He love salad ;)

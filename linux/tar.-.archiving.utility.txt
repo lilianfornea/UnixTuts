@@ -1,0 +1,42 @@
+TAR - Archiving Utility
+=====================
+(C) Lilian Fornea, AAL
+
+@lilianfornea : Twitter
+
+
+* Intro
+* Next Level
+* Last thoughts
+* Beyond Discussion
+
+
+Intro
+-----
+Because my english is very bad, easiest way will be if you copy row by row in your shell and examine output
+
+
+Next Level
+----------
+
+$ cd /tmp
+$ pwd
+$ touch textfile_{0..099}.txt
+$ ls textfile_0* | less
+$ bzip2 -kvz textfile_0*
+$ ls textfile_0* | less
+$ rm textfile_0??.txt.bz2
+$ tar -cjvf txts.tar.bz2 textfile_0??.txt
+$ tar -czvf txts.tar.gz textfile_0??.txt
+$ ls -lh txts*
+
+$ $ rm textfile_0??.txt
+
+Last thoughts
+-------------
+Be shure that I will update tutorial in the future. So, stay on tune. And, in case it was usefull, share please with your fellows.
+
+
+Beyond Discussion
+-----------------
+Don't be so shy! Give leafs to author. He love salad ;)

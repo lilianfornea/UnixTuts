@@ -1,0 +1,53 @@
+LS - LIST DIRECTORY CONTENTS
+============================
+(C) Lilian Fornea, AAL
+
+@lilianfornea : Twitter
+
+
+
+* Intro
+* Next Level
+* Last thoughts
+* Beyond Discussion
+
+
+Intro
+-----
+Because my english is very bad, easiest way will be if you copy row by row in your shell and examine output
+
+
+Next Level
+----------
+
+$ echo 'to exit from less pager type q key'
+$ clear
+$ ls -l /etc | less
+$ ls -al /etc | less
+$ ls -alh /etc | less
+$ ls -ahlp /etc | less
+$ ls -ahlpr /etc | less
+$ echo ' in less pager type / key then type useradd and ctrl+j'
+$ ls -alhpR /etc | less
+$ ls -alhFS /etc | less
+$ ls -alhrFS /etc | less
+$ ls -lt /etc | less
+$ cd /tmp
+$ mkdir 01secret .01topsecret
+$ ls -d */
+$ ls -lhd ~/.??*
+$ ls -al --time-style=+%D | grep `date +%D`
+$ ls -1 --group-directories-first
+$ touch xfiles.ggl
+$ ls -RX | grep -iE *.ggl | wc -l
+$ ls -RX | grep -iE *.ggl | less
+
+
+Last thoughts
+-------------
+Be shure that I will update tutorial in the future. So, stay on tune. And, in case it was usefull, share please with your fellows.
+
+
+Beyond Discussion
+-----------------
+Don't be so shy! Give leafs to author. He love salad ;)

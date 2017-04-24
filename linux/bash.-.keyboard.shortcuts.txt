@@ -1,0 +1,108 @@
+Bash - Keyboard Shortcuts
+=========================
+(C) Lilian Fornea, AAL
+
+@lilianfornea : Twitter
+
+
+
+* Intro
+* Next Level
+* Last thoughts
+* Beyond Discussion
+
+
+Intro
+-----
+I'll be honest with you: it was inspired from Wikipedia
+
+
+Next Level
+----------
+Tab: Autocompletes from the cursor position
+
+$ cd /tmp
+$ touch qwertyuiop.txt
+$ ls qwe
+
+then touch Tab keyboard
+Gnu Readline made all next job for you. Thumbs Up!
+
+CTRL+a: Moves the cursor at the beggining of the line
+CTRL+b: Moves cursor one character back, like <- key
+CTRL+c: Abort current task
+
+$ ping -c 5 ya.ru
+
+Try Ctr+c after 3'rd ping count
+
+CTRL+d: equivalent to exit command if no text is on current line. OR deletes the current character. OR sends EOF signal to bash
+
+$ cat << EOF >> hello.txt
+
+type random text, then Enter Key, then Ctrl+d
+After that, type next comand to see what you get
+
+$ cat hello.txt
+
+CTRL+e: Equivalent to End key. Moves cursor to the end of the line
+
+CTRL+f: Like -> key. Moves cursor one character forward.
+
+CTRL+h: Same as BACKSPACE key
+
+CTRL+i: Exactly like TAB key
+
+CTRL+j: Replace ENTER key
+
+CTRL+k: Clears the line content after cursor and copies it into the clipboard
+Type
+
+$ cat hello.txt
+
+then move on e character from h[e]llo.txt and type Ctrl+k OR
+
+type
+
+$ aloha friends
+
+then move at the beggining of the line, touch Ctrl+k and Ctrl+y
+
+CTRL+l: Equivalent to clear command. Clears the screen content
+
+CTRL+u: Clears the line content before the cursor and copies it into the clipboard
+
+$ cat hello.txt
+
+move h character from [h]ello.txt and type Ctrl+u
+
+CTRL+y: yank (copy) clipboard content in the curor position.
+
+$ touch asdfghjkl.txt
+
+Type Ctrl+u and Ctrl+y
+
+CTRL+w: Clears the word before the cursor and copies it into the clipboard
+
+ALT+b: Moves the cursor backward one word
+
+ALT+f: Moves the cursor forward one word
+
+ALT+c: Capitalizes the character under the cursor and moves to the end of the word
+
+ALT+u: Capitalize every character from the cursor's position to the end of the current word
+
+ALT+l: Lowers every character from the cursor position to the end of the 
+word
+
+ALT+.: Insert last argument of the previous command
+
+
+Last thoughts
+-------------
+Be shure that I will update tutorial in the future. So, stay on tune. And, in case it was usefull, share please with your fellows.
+
+
+Beyond Discussion
+-----------------
+Don't be so shy! Give leafs to author. He love salad ;)
