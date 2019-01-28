@@ -1,0 +1,65 @@
+INSTALLATION, CONFIGURATION & USE OF WINE IN SLACKWARE LINUX
+============================================================
+(C) Lilian Fornea, AAL
+
+@lilianfornea : Twitter
+
+
+
+* Making 64-bit system multilib
+* WINE Installation
+* WINE Configuration
+* Binary EXEcution
+* Last thoughts
+* Beyond Discussion
+
+
+
+Making 64-bit system multilib
+-----------------------------
+
+$ cd ~
+$ mkdir -p alien/multilib ; cd alien/multilib ; pwd
+$ lftp -c 'open http://slackware.com/~alien/multilib/ ; mirror -c -e 14.2'
+$ cd 14.2
+# upgradepkg --reinstall --install-new *.t?z
+# upgradepkg --install-new slackware64-compat32/*-compat32/*.t?z
+# echo Now, you must reboot your computer because of the glibc upgrade
+# /sbin/init 6
+
+
+WINE Installation
+-----------------
+
+$ cd ~/alien
+$ lftp -c "open http://www.slackware.com/~alien/slackbuilds/wine/; mirror build"
+$ cd build
+$ chmod +x wine.SlackBuild
+# REQUIRE_FONTFORGE=NO ./wine.SlackBuild
+---
+Wine compiling time could take enough to cook some difficult food, or make some shopping at local store SO don't waste time watching how Frankenstein is getting alive.
+---
+# installpkg /tmp/wine-2.8-x86_64-1alien.txz
+
+
+WINE Configuration
+------------------
+$ winecfg
+
+
+Binary EXEcution
+----------------
+
+$ wget http://lilianfornea.tk/unixtuts/linux/slackware/wine/mp3DirectCut.exe.zip
+$ unzip mp3DirectCut.exe.zip
+$ wine mp3DirectCut.exe
+
+
+Last thoughts
+-------------
+Be shure that I will update tutorial in the future. So, stay on tune. And, in case it was usefull, share please with your fellows.
+
+
+Beyond Discussion
+-----------------
+Don't be so shy! Give leafs to author. He love salad ;)

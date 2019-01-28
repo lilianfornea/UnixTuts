@@ -1,0 +1,46 @@
+Simple optimal text formatter
+=============================
+(C) Lilian Forne, AAL
+
+@lilianfornea : Twitter
+
+
+
+* Intro
+* Next Level
+* Last thoughts
+* Beyond Discussion
+
+
+Intro
+-----
+Because my english is very bad, easiest way will  be if you copy row by row in your shell and examine output.
+
+
+Next Level
+----------
+
+$ echo -e 'Lorem ipsum dolor sit amet, consectetuer adipiscing
+elit. Curabitur dignissim venenatis pede. Quisque dui dui, ultricies
+ut, facilisis non, pulvinar non. Duis quis arcu a purus volutpat
+iaculis. Morbi id dui in diam ornare dictum. Praesent consectetuer
+vehicula ipsum. Praesent tortor massa, congue et, ornare in, posuere
+eget, pede.\n\nVivamus rhoncus. Quisque lacus. In hac habitasse platea
+dictumst. Nullam mauris tellus, sollicitudin non, semper eget, sodales
+non, pede. Phasellus varius ullamcorper libero. Fusce ipsum lorem, iaculis
+nec, vulputate vitae, suscipit vel, tortor. Cras varius.\n\nNullam
+fringilla pellentesque orci. Nulla eu ante pulvinar velit rhoncus
+lacinia. Morbi fringilla lacus quis arcu. Vestibulum sem quam, dapibus
+in, fringilla ut, venenatis ut, neque.' >> fmt-u.txt
+
+$ fmt -u unformatted.txt > formatted.txt
+
+
+Last thoughts
+-------------
+Be shure that I will update tutorial in the future. So, stay on tune. And, in case it was usefull, share please with your fellows.
+
+
+Beyond Discussion
+-----------------
+Don't be so shy! Give leafs to author. He love salad ;)

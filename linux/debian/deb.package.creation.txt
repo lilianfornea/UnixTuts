@@ -1,0 +1,17 @@
+DEB PACKAGE CREATION
+====================
+(C) Lilian Fornea, AAL
+
+@lilianfornea : Twitter
+
+
+
+$ cd /tmp
+$ wget https://launchpad.net/gnuclad/trunk/0.2/+download/gnuclad-0.2.4.tar.gz
+# apt install build-essential automake autoconf libtool pkg-config libcurl4-openssl-dev intltool libxml2-dev libgtk2.0-dev libnotify-dev libglib2.0-dev libevent-dev checkinstall
+$ tar zxvf gnuclad-0.2.4.tar.gz
+$ cd gnuclad-0.2.4/
+$ ./configure
+$ make
+# checkinstall
+# chown user:usergroup gnuclad_0.2.4-1_amd64.deb

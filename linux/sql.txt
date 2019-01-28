@@ -1,0 +1,32 @@
+CREATE DATABASE firstdatabase;
+GRANT ALL PRIVILEGES ON firstdatabase.* TO testuser@localhost IDENTIFIED BY 'password';
+SHOW DATABASES;
+sudo netstat -ntlp | pcregrep '(3306|mysql)'
+USE firstdatabase;
+SHOW TABLES;
+CREATE TABLE pet (name VARCHAR(20), owner VARCHAR(20), species VARCHAR(20), sex CHAR(6), birth DATE, death DATE);
+SHOW TABLES;
+DESCRIBE pet;
+INSERT INTO pet VALUES ('Juchka','Vasili Feodorovich','Dovrnyashka','female','1999.03.12','2012.05.31');
+INSERT INTO pet VALUES ('Juchka','Vasili Feodorovich','Dvornyashka','female','1999.03.12','2012.05.31');
+INSERT INTO pet VALUES ('Bim','Ivan Ivanych','Dvornyashka','male','2014.11.12',2017.07.21);
+SELECT * FROM pets
+UPDATE pet SET species = 'Dvornyashka' where name = 'Juchka';
+DELETE FROM pet WHERE name = 'Juchka';
+RENAME TABLE pet TO pets;
+
++++++++++++++++
+Another version
++++++++++++++++
+
+CREATE USER 'jana'@'%' IDENTIFIED BY 'dark';
+GRANT ALL ON *.* TO 'jana'@'%' WITH GRANT OPTION;
+SELECT USER FROM mysql.user;
+SHOW GRANTS FOR jana;
+\q
+mysql -u jana -p
+CREATE DATABASE alkagoliki;
+SHOW DATABASES;
+DROP DATABASE IF EXISTS alkagoloki;
+REVOKE ALL ON *.* FROM jana;
+DROP USER IF EXISTS jana;

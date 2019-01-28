@@ -1,0 +1,1 @@
+dir2ogg -r --delete-input -v -m --m4a-decoder=mplayer --quality=1 /full/destination/address/

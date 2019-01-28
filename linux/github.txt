@@ -1,0 +1,46 @@
+GIT version control system
+==========================
+(C) Lilian Forne, AAL
+
+@lilianfornea : Twitter
+
+
+
+* Intro
+* Next Level
+* Last thoughts
+* Beyond Discussion
+
+
+Intro
+-----
+Because my english is very bad, easiest way will  be if you copy row by row in your shell and examine output.
+
+
+Next Level
+----------
+
+$ git config --global user.name "User Name"
+$ git config --global user.email "your@usermail.com"
+$ cd ~ && mkdir github && cd github
+
+$ git clone https://github.com/lilianfornea/UseLessRepo.git
+$ echo -e "this is the third text file in that folder" >> UseLessRepo/3rd.txt
+$ mkdir -p 01f/011f
+$ echo -e "just text file" >> 01f/justxtfile.txt
+$ echo -e "just text file" >> 01f/011f/justxtfile.txt
+$ git add 3rd.txt 01f/
+$ git status
+$ git remote -v 
+$ git commit -m "added new text files in some new directories"
+$ git push -u origin master
+
+
+Last thoughts
+-------------
+Be shure that I will update tutorial in the future. So, stay on tune. And, in case it was usefull, share please with your fellows.
+
+
+Beyond Discussion
+-----------------
+Don't be so shy! Give leafs to author. He love salad ;)

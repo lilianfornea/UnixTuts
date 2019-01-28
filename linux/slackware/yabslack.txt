@@ -1,0 +1,23 @@
+INSTALLATION OF YANDEX BROWSER IN SLACKWARE LINUX
+=====================================================
+(C) Lilian Fornea, AAL
+
+@lilianfornea : Twitter
+
+
+
+$ wget http://repo.yandex.ru/yandex-browser/rpm/beta/x86_64/yandex-browser-beta-17.6.1.835-1.x86_64.rpm
+$ rpm2tgz yandex-browser-beta-17.6.1.835-1.x86_64.rpm
+# installpkg yandex-browser-beta-17.6.1.835-1.x86_64.tgz
+# chmod 4755 /opt/yandex/browser-beta/yandex_browser-sandbox
+# chown root /opt/yandex/browser-beta/yandex_browser-sandbox
+$ echo "yandex-browser-beta --no-sandbox" > yab.sh
+$ chmod +x yab.sh
+$ ./yab.sh 
+OR 
+$ sh yab.sh
+
+
+
+USEFUL-INFO
+To install Chrome extensions, simply go to chrome.google.com/webstore. To install Opera add-ons, go to addons.opera.com

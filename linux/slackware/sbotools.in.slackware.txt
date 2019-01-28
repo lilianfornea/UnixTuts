@@ -1,0 +1,98 @@
+SBOTOOLS
+========
+(C) Lilian Fornea, AAL
+
+@lilianfornea : Twitter
+
+
+
+* Intro
+* sbotools Installation
+* Pre Utilization Bureaucracy
+* Sbotools Configuration
+* Apps use
+* Daily Routine
+* Replace software with recently released
+* Become free of unneeded
+* Cinderella Call
+
+
+
+Intro
+-----
+As is stated on official site https://pink-mist.github.io/sbotools/index.html, sbotools provides a (FreeBSD) ports-like interface to SlackBuilds.org site. Thats mean, it can handle dependencies like many other linux ditributions handling utilities, such as apt, dnf, pacman and so on.
+
+
+sbotools Installation
+-------------------
+
+$ cd ~
+$ mkdir manual-sbo && cd manual-sbo
+$ wget http://slackbuilds.org/slackbuilds/14.2/system/sbotools.tar.gz
+$ tar zxvf sbotools.tar.gz
+$ cd sbotools/
+$ wget https://pink-mist.github.io/sbotools/downloads/sbotools-2.4.tar.gz
+# ./sbotools.SlackBuild
+# installpkg /tmp/sbotools-2.4-noarch-1_SBo.tgz
+
+
+Pre Utilization Bureaucracy
+---------------------------
+# sbosnap fetch
+
+
+Sbotools Configuration
+----------------------
+
+# sboconfig -c FALSE -d TRUE -V 14.2 && sboconfig -l
+WHERE
+'sboconfig -c FALSE' means that the directory where sources are unpacked, compiled and resulting packages will be put together, which is /tmp/SBo, will be cleaned after download & installation process;
+'sboconfig -d TRUE' means that source code of the slackbuild, that resides under /usr/sbo/distfiles/, will be removed by default;
+'sboconfig -V 14.2' means that you specify sbotools for which version of distro release is indicated;
+'sboconfig -l' list your current configuration.
+
+
+Apps Use
+--------
+
+# sbofind master pdf editor | less
+# sbofind masterpdfedditor
+# sboinstall -i gpicview
+# sboinstall gpicview
+
+
+Daily Routine
+-------------
+
+Before every new install session using Sbotools is advisable to update local copy of the slackbuilds.org tree and check for updates
+# sbocheck
+
+
+Replace software with recently released
+---------------------------------------
+# sboupgrade --all
+
+
+Become free of unneeded
+-----------------------
+
+# sboinstall snes9x
+# sboremove -a snes9x
+
+
+Cinderella Call
+---------------
+
+Next command will clean working directories, located, by default under /tmp/SBo
+# sboclean -w
+
+To clean distfiles by default located at /usr/sbo/distfiles, apply
+# sboclean -d
+
+
+
+In case something I missed
+$ man sbotools.conf, sboconfig, sbosnap, sbofind, sboinstall, sboclean, sbocheck, sboupgrade, sboremove
+Will Certainly Help You!
+
+GOOD LUCK ;)

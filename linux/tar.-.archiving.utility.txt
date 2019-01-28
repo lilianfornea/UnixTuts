@@ -1,5 +1,5 @@
 TAR - Archiving Utility
-=====================
+=======================
 (C) Lilian Fornea, AAL
 
 @lilianfornea : Twitter
@@ -29,8 +29,8 @@ $ rm textfile_0??.txt.bz2
 $ tar -cjvf txts.tar.bz2 textfile_0??.txt
 $ tar -czvf txts.tar.gz textfile_0??.txt
 $ ls -lh txts*
+$ rm textfile_0??.txt
 
-$ $ rm textfile_0??.txt
 
 Last thoughts
 -------------

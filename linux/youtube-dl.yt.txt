@@ -1,0 +1,34 @@
+Download videos from YouTube with youtube-dl
+============================================
+(C) Lilian Forne, AAL
+
+@lilianfornea : Twitter
+
+
+
+* Intro
+* Next Level
+* Last thoughts
+* Beyond Discussion
+
+
+Intro
+-----
+Because my english is very bad, easiest way will  be if you copy row by row in your shell and examine output.
+
+
+Next Level
+----------
+
+$ youtube-dl -F https://www.youtube.com/watch?v=T0CblPb3rLU
+$ youtube-dl -f 135 https://www.youtube.com/watch?v=T0CblPb3rLU
+
+
+Last thoughts
+-------------
+Be shure that I will update tutorial in the future. So, stay on tune. And, in case it was usefull, share please with your fellows.
+
+
+Beyond Discussion
+-----------------
+Don't be so shy! Give leafs to author. He love salad ;)

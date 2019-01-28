@@ -1,0 +1,63 @@
+Bash Expansions
+===============
+(C) Lilian Forne, AAL
+
+@lilianfornea : Twitter
+
+
+
+* Intro
+* Next Level
+* Last thoughts
+* Beyond Discussion
+
+
+Intro
+-----
+I'll be honest with you: it was inspired by a good tutorial video.
+
+
+Next Level
+----------
+
+$ cd ~
+$ mkdir -v tmp
+$ pwd -P
+$ cd tmp
+$ pwd -P
+$ echo ~-
+$ pwd -P
+
+Let's create a bunch of files in this folder with brace expansion and interpolation.
+
+$ echo {1..10}
+$ touch {apple,banana,cherry,kiwi,kaki}
+$ touch textfile-{01..99}
+$ echo {1..20..2}
+$ echo {1..30..3}
+$ echo {A..Z}
+$ echo {Z..A}
+$ echo {a..z}
+$ echo {z..a}
+$ echo {A..z}
+$ echo {Z..a}
+$ echo {z..f..2}
+$ echo {a..t..3}
+$ rm *
+$ touch {apple,cherry,kiwi}-{01..99}-{a..z}
+$ ls -l | wc -l
+$ ls
+
+If you want to remove all this files
+
+$ rm -v {apple,cherry,kiwi}-{01..99}-{a..z}
+
+
+Last thoughts
+-------------
+Be shure that I will update tutorial in the future. So, stay on tune. And, in case it was usefull, share please with your fellows.
+
+
+Beyond Discussion
+-----------------
+Don't be so shy! Give leafs to author. He love salad ;)
