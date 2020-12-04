@@ -1,0 +1,37 @@
+FILE - Recognize type of data
+=============================
+(C) Lilian Forne, AAL
+
+@lilianfornea : Twitter
+
+
+
+* Intro
+* Next Level
+* Last thoughts
+* Beyond Discussion
+
+
+Intro
+-----
+Because my english is very bad, easiest way will  be if you copy row by row in your shell and examine output.
+
+
+Next Level
+----------
+
+$ file /etc/hosts
+
+$ file /bin/ls
+
+$ file /dev/sda1
+
+
+Last thoughts
+-------------
+Be shure that I will update tutorial in the future. So, stay on tune. And, in case it was usefull, share please with your fellows.
+
+
+Beyond Discussion
+-----------------
+Don't be so shy! Give leafs to author. He love salad ;)

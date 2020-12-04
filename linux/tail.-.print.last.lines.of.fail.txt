@@ -1,0 +1,46 @@
+TAIL - Print last lines of file
+===============================
+(C) Lilian Forne, AAL
+
+@lilianfornea : Twitter
+
+
+
+* Intro
+* Next Level
+* Last thoughts
+* Beyond Discussion
+
+
+Intro
+-----
+Because my english is very bad, easiest way will  be if you copy row by row in your shell and examine output.
+
+
+Next Level
+----------
+
+By default, tail will print the last 10 lines of each file to standard output
+$ tail .bash_profile
+
+To print last NUM of bytes use
+$ tail -c 70 .bash_profile
+
+-n argument will print last NUM of lines instead of 10
+$ tail -n 4 .bash_profile
+
+To output header name of the file use -v or --verbose
+$ tail -v -c 100 .bash_profile
+
+To watch how new strings are added to file and show that dinamically use -f argument
+$ tail -f /var/log/messages
+
+
+Last thoughts
+-------------
+Be shure that I will update tutorial in the future. So, stay on tune. And, in case it was usefull, share please with your fellows.
+
+
+Beyond Discussion
+-----------------
+Don't be so shy! Give leafs to author. He love salad ;)
